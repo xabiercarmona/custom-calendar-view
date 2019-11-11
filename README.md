@@ -28,7 +28,7 @@ The custom CalendarView can be configured with the following attributes:
 
 For example:
 ```xml
-<.CalendarView
+<com.etxazpi.tools.calendar.CalendarView
         android:id="@+id/calendarView"
         app:firstDayOfTheWeek="2"
         app:displayOnlyPastEvents="true"
