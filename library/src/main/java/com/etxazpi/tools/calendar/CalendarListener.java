@@ -1,4 +1,4 @@
-package com.etxazpi.tools.calendar.calendar;
+package com.etxazpi.tools.calendar;
 
 import java.util.Calendar;
 

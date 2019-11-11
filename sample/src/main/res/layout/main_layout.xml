@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_light">
 
-    <com.etxazpi.tools.calendar.calendar.CalendarView
+    <com.etxazpi.tools.calendar.CalendarView
         android:id="@+id/calendarView"
         app:firstDayOfTheWeek="2"
         app:autoUpdateViews="false"

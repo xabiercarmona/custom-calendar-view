@@ -1,4 +1,4 @@
-package com.etxazpi.tools.calendar.calendar;
+package com.etxazpi.tools.calendar;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;
@@ -23,8 +23,6 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
-
-import com.etxazpi.tools.calendar.R;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;

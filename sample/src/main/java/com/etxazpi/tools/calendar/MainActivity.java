@@ -6,9 +6,6 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.etxazip.tools.calendar.R;
-import com.etxazpi.tools.calendar.calendar.CalendarEvent;
-import com.etxazpi.tools.calendar.calendar.CalendarListener;
-import com.etxazpi.tools.calendar.calendar.CalendarView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
