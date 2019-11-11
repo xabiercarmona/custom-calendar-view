@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light">
+
+    <com.etxazpi.tools.calendar.calendar.CalendarView
+        android:id="@+id/calendarView"
+        app:firstDayOfTheWeek="2"
+        app:autoUpdateViews="false"
+        app:displayOnlyPastEvents="true"
+        app:displaySelectLastEvent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

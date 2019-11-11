@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CalendarView">
+        <attr name="firstDayOfTheWeek" format="integer"/>
+        <attr name="useShortWeeks" format="boolean"/>
+        <attr name="onlyEventsClickable" format="boolean"/>
+        <attr name="autoUpdateViews" format="boolean"/>
+        <attr name="displaySelectLastEvent" format="boolean"/>
+        <attr name="displayOnlyPastEvents" format="boolean"/>
+        <attr name="eventColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="todayColor" format="color"/>
+
+        eventColor
+    </declare-styleable>
+</resources>
