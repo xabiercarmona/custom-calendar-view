@@ -7,6 +7,8 @@ It provides:
 - Day selection and month change listeners
 - Full control of view updates, ideal for seting up monthly event pagination.
 
+Releases available in Jitpack [![](https://jitpack.io/v/xabiercarmona/custom-calendar-view.svg)](https://jitpack.io/#xabiercarmona/custom-calendar-view)
+
 ## Sample
 A sample application is available alongside the library
 
@@ -45,5 +47,8 @@ repositories {
 ```
 Add the library dependency to the application build.gradle:
 ```gradle
-implementation ''
+implementation 'com.github.xabiercarmona:custom-calendar-view:1.0.0'
 ```
+
+## Developer
+- Xabier Carmona - <xabisolo@gmail.com>
