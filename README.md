@@ -1,4 +1,4 @@
-#Custom CalendarView
+# Custom CalendarView
 This custom CalendarView is an alternative to Android's CalendarView.
 It provides:
 - Event icons
@@ -10,7 +10,7 @@ It provides:
 ## Sample
 A sample application is available alongside the library
 
-##Compatibility
+## Compatibility
 The library requires minSdkVersion 15.
 ## Usage
 The custom CalendarView can be configured with the following attributes:
