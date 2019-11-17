@@ -25,21 +25,14 @@ public class MainActivity extends AppCompatActivity implements CalendarListener 
 
         List<CalendarEvent> eventList = new ArrayList<>();
         Calendar event1 = Calendar.getInstance();
-        event1.set(Calendar.DAY_OF_MONTH, 1);
-        event1.set(Calendar.MONTH, 1);
+        event1.set(Calendar.DAY_OF_MONTH, 18);
+        event1.set(Calendar.MONTH, 10);
         eventList.add(new CalendarEvent(event1));
-        Calendar event2 = Calendar.getInstance();
-        event2.set(Calendar.DAY_OF_MONTH, 31);
-        event2.set(Calendar.MONTH, 6);
-        eventList.add(new CalendarEvent(event2));
-        Calendar event3 = Calendar.getInstance();
-        event3.set(Calendar.DAY_OF_MONTH, 25);
-        event3.set(Calendar.MONTH, 10);
-        eventList.add(new CalendarEvent(event3));
 
+        calendarView.updateViews();
         calendarView.setCalendarListener(this);
         calendarView.setEvents(eventList);
-        calendarView.updateViews();
+
 
         Log.d(TAG, "onCreate: " + calendarView.getDate().getTime());
 

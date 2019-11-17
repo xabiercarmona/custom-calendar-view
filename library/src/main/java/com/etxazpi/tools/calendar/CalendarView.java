@@ -137,8 +137,10 @@ public class CalendarView extends LinearLayout implements View.OnTouchListener, 
     private void gotoLastEvent() {
         if (eventList != null) {
             CalendarEvent lastEvent = getLastEvent(displayOnlyPastEvents);
-            selectDay(lastEvent.getEventDate());
-            gotToMonth(lastEvent.getEventDate());
+            if(lastEvent!=null) {
+                selectDay(lastEvent.getEventDate());
+                gotToMonth(lastEvent.getEventDate());
+            }
         }
     }
 
@@ -147,8 +149,11 @@ public class CalendarView extends LinearLayout implements View.OnTouchListener, 
         for (CalendarEvent event : eventList) {
             Calendar eventDate = event.getEventDate();
             if (eventDate != null) {
+                eventDate.set(Calendar.HOUR_OF_DAY, 0);
+                eventDate.set(Calendar.MINUTE, 0);
+                eventDate.set(Calendar.SECOND, 0);
                 if (winner == null) {
-                    if (!onlyPastEvents || (eventDate.compareTo(currentCalendar) < 0)) {
+                    if (!onlyPastEvents || (eventDate.compareTo(currentCalendar) <= 0)) {
                         winner = event;
                     }
                 } else {
