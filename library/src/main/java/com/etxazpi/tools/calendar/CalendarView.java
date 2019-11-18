@@ -440,7 +440,9 @@ public class CalendarView extends LinearLayout implements View.OnTouchListener, 
         addSelection(selectedDayCalendar);
 
         selectedDay = selectedDayCalendar;
-        calendarInUse.set(Calendar.DAY_OF_YEAR, selectedDay.get(Calendar.DAY_OF_YEAR));
+        calendarInUse.set(Calendar.YEAR, selectedDay.get(Calendar.YEAR));
+        calendarInUse.set(Calendar.MONTH, selectedDay.get(Calendar.MONTH));
+        calendarInUse.set(Calendar.DAY_OF_MONTH, selectedDay.get(Calendar.DAY_OF_MONTH));
 
         if (calendarListener != null) {
             calendarListener.onDaySeledted(calendarInUse);
