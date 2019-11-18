@@ -58,9 +58,9 @@ public class CalendarView extends LinearLayout implements View.OnTouchListener, 
 
     private View rootView;
     private Calendar currentCalendar = Calendar.getInstance(Locale.getDefault());
-    private Calendar calendarInUse = Calendar.getInstance(Locale.getDefault());
+    private Calendar calendarInUse = (Calendar)currentCalendar.clone();
     private Calendar selectedDay;
-    private Calendar previousCalendar = Calendar.getInstance(Locale.getDefault());
+    private Calendar previousCalendar = (Calendar)currentCalendar.clone();
     private boolean isMonthChanged;
     private float downX, upX;
     //Listener
@@ -425,9 +425,7 @@ public class CalendarView extends LinearLayout implements View.OnTouchListener, 
 
                 String dayStr = ((String) layoutDayOfTheMonth.getTag()).substring(TAG_LAYOUT_DAYOFTHEMONTH.length());
 
-                Calendar selectedDayCalendar = Calendar.getInstance();
-                selectedDayCalendar.set(Calendar.YEAR, calendarInUse.get(Calendar.YEAR));
-                selectedDayCalendar.set(Calendar.MONTH, calendarInUse.get(Calendar.MONTH));
+                Calendar selectedDayCalendar = (Calendar) calendarInUse.clone();
                 selectedDayCalendar.set(Calendar.DAY_OF_MONTH, Integer.valueOf(dayStr));
 
                 selectDay(selectedDayCalendar);
