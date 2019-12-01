@@ -11,6 +11,7 @@
         <attr name="eventColor" format="color"/>
         <attr name="selectedColor" format="color"/>
         <attr name="todayColor" format="color"/>
+        <attr name="generalColor" format="color" />
 
         eventColor
     </declare-styleable>

@@ -12,6 +12,7 @@
         app:autoUpdateViews="false"
         app:displayOnlyPastEvents="true"
         app:displaySelectLastEvent="true"
+        app:generalColor="?attr/colorSurface"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
